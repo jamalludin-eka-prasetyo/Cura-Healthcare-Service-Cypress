@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add('ClickBtnMakeAppoinment',()=>{
+    cy.get('#btn-make-appointment').click()
+    cy.url().should('include','/profile.php#login')
+})
