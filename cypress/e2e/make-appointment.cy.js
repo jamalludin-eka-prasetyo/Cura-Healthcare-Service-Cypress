@@ -10,7 +10,7 @@ describe("Make Appointment",()=>{
             cy.get('h2').contains('Make Appointment')
         })
 
-        it('Make Appoinment: Should Have a Form',()=>{
+        it('Make Appointment: Should Have a Form',()=>{
             cy.get('form').should('be.visible')
         })
 
@@ -25,7 +25,7 @@ describe("Make Appointment",()=>{
 
         const dataUsers = Cypress.env('dataUsers')
         dataUsers.forEach((data)=>{
-            it.only(`Make Appointment: Submit Form With Data ${data.id}`,()=>{
+            it(`Make Appointment: Submit Form With Data ${data.id}`,()=>{
                 cy.fillFormAppointment(data)
                 cy.get('#btn-book-appointment').click()
                 

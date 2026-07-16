@@ -1,10 +1,10 @@
 const { defineConfig } = require("cypress");
 const fs = require('fs');
-const Papa = require('papaparse');
+require('dotenv').config();
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://katalon-demo-cura.herokuapp.com/",
+    baseUrl: process.env.CYPRESS_BASE_URL,
     viewportWidth: 1920, 
     viewportHeight: 1080,
     

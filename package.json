@@ -3,6 +3,6 @@
     "cypress": "^15.18.1"
   },
   "devDependencies": {
-    "papaparse": "^5.5.4"
+    "dotenv": "^17.4.2"
   }
 }

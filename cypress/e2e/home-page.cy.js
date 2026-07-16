@@ -8,7 +8,7 @@ describe('template spec', () => {
       cy.get('h1').contains("CURA Healthcare Service")
     })
 
-    it("Home Page: Should have a toogle menu",()=>{
+    it("Home Page: Should have a toggle menu",()=>{
       cy.get('#menu-toggle').should('have.class','toggle')
     })
   })
