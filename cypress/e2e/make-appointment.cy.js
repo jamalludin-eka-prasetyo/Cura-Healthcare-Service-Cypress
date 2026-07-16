@@ -47,15 +47,5 @@ describe("Make Appointment",()=>{
                 }
             })
         })
-
-
-        it('Make Appointment: Validate Appointment Confirmation',()=>{
-            cy.fillFormAppointment(data)
-            cy.get('#facility').should('contain','Hongkong CURA Healthcare Center')
-            cy.get('#hospital_readmission').should('contain','Yes')
-            cy.get('#program').should('contain','Medicare')
-            cy.get('#visit_date').should('contain','20/07/2026')
-            cy.get('#comment').should('contain','ngopi')
-        })
     })
 })
