@@ -245,24 +245,6 @@ This project is integrated with **GitHub Actions** for continuous testing.
 - Automatic dependency installation
 - Test execution in headless mode
 
-## 📸 Test Artifacts
-
-Cypress automatically generates test artifacts for debugging:
-
-### Screenshots
-- **Location:** `cypress/screenshots/`
-- **Generated:** On test failures
-- **Format:** PNG images
-- **Naming:** `<spec-name>/<test-name> (failed).png`
-
-### Videos
-- **Location:** `cypress/videos/`
-- **Generated:** For all test runs
-- **Format:** MP4 video files
-- **Content:** Complete test execution recording
-
-**Note:** These directories are excluded from version control via `.gitignore`.
-
 ## 🔗 Application Under Test
 
 **URL:** https://katalon-demo-cura.herokuapp.com/
@@ -291,23 +273,13 @@ Contributions are welcome! To contribute to this project:
 4. Push to the branch (`git push origin feature/your-feature-name`)
 5. Open a Pull Request
 
-### Coding Standards
-- Follow existing code style and conventions
-- Write descriptive test names
-- Keep tests independent and isolated
-- Update documentation for new features
-
 ## 📞 Contact
-
 For questions, issues, or feedback, please contact:
 
-- **WhatsApp:** [Your WhatsApp Number]
-- **Email:** [Your Email Address]
+- **WhatsApp:** +6285156031610
+- **Email:** jamalludin.eka.prasetyo@gmail.com
 
 ---
 
 **Last Updated:** July 2026
-
 **Cypress Version:** 15.18.1
-
-**Maintained by:** [Your Name/Team]
