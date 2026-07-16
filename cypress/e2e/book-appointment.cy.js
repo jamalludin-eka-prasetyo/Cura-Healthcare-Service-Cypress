@@ -10,12 +10,22 @@ describe('Book-Appointment',()=>{
         })
     })
 
-    context('Form Login ( Positive ) ',()=>{
-        it('Form Login: Fullfill Form Login With Valid Data',()=>{
-            cy.ClickBtnMakeAppoinment()
-            cy.get('#txt-username').type('John Doe')
-            cy.get('#txt-password').type('ThisIsNotAPassword')
-            cy.get('#btn-login').click()
+    const users = Cypress.env('users')
+    users.forEach((user)=>{
+        context('Form Login',()=>{
+            it(`Form Login: Fullfill Form Login With  ${user.validity} Data`,()=>{
+                cy.ClickBtnMakeAppointment()
+                cy.get('#txt-username').type(user.username)
+                cy.get('#txt-password').type(user.password)
+                cy.get('#btn-login').click()
+
+                const isValid = user.validity === "Valid"
+                if(isValid){
+                    cy.url().should('include','/#appointment')
+                } else{
+                    cy.get('.text-danger').should('be.visible')
+                }
+            })
         })
     })
 })

@@ -1,0 +1,44 @@
+{
+    "dataUsers": [
+        {
+        "id": 1,
+        "facility": "Tokyo CURA Healthcare Center",
+        "readmission": true,
+        "healthcare_program": "Medicare",
+        "date": "15/08/2026",
+        "comment": "Positive case - full data filled correctly"
+        },
+        {
+        "id": 2,
+        "facility": "Hongkong CURA Healthcare Center",
+        "readmission": false,
+        "healthcare_program": "Medicaid",
+        "date": "20/08/2026",
+        "comment": "Positive case - no readmission, medicaid program"
+        },
+        {
+        "id": 3,
+        "facility": "Seoul CURA Healthcare Center",
+        "readmission": true,
+        "healthcare_program": "None",
+        "date": "25/08/2026",
+        "comment": "Positive case - readmission checked, no program"
+        },
+        {
+        "id": 4,
+        "facility": "Seoul CURA Healthcare Center",
+        "readmission": false,
+        "healthcare_program": "None",
+        "date": "",
+        "comment": "Negative case - visit date empty, should trigger validation error"
+        },
+        {
+        "id": 5,
+        "facility": "Tokyo CURA Healthcare Center",
+        "readmission": true,
+        "healthcare_program": "Medicare",
+        "date": "",
+        "comment": "Negative case - visit date empty with readmission checked"
+        }
+    ]
+}
