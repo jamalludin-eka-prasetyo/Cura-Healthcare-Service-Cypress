@@ -3,7 +3,7 @@ describe('template spec', () => {
     cy.visit('/')
   })
 
-  context("Home Page Section",()=>{
+  context("Home Page Sections",()=>{
     it("Home Page : Should have a header CURA Healthcare Service",()=>{
       cy.get('h1').contains("CURA Healthcare Service")
     })
