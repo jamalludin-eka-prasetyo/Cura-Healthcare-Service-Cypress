@@ -1,31 +1,37 @@
 {
     "users": [
         {
+            "id": 1,
             "username": "John Doe",
             "password": "ThisIsNotAPassword",
             "validity": "Valid"
         },
         {
+            "id": 2,
             "username": "Johnattan Doe",
             "password": "ThisIsAPassword",
             "validity": "Invalid"
         },
         {
+            "id": 3,
             "username": "Doe Lawan",
             "password": "ThisPassword",
             "validity": "Invalid"
         },
         {
+            "id": 4,
             "username": "!@#!$!%!@$!@#",
             "password": "ThisIsNotAPassword",
             "validity": "Invalid"
         },
         {
+            "id": 5,
             "username": "Admin",
             "password": "Admin123",
             "validity": "Invalid"
         },
         {
+            "id": 6,
             "username": "Leak Morrow",
             "password": "ThisIsNotAPassword",
             "validity": "Invalid"
